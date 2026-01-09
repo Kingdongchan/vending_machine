@@ -1,12 +1,18 @@
 import tkinter as tk
 import cls.frame as frm
 
+# 16개의 상품의 번호와 상품이름 가격들이 적혀 있어야함
+# 패널에는 번호와 상품명만 출력
+# 상품보다 현금이 많이 들어오면 불을 들어오게 끔
+# 배출구에 구매한 상품이 배출
+
 def main_frame_product (main_frm):
 
     #프레임이 2개로 나눠져야함
     #상단 - 상품을 진열하는 곳
     #하단 - 배출구 -> 오른쪽 하단에 있어야함
     #상품을 진열할 곳
+    
     top_frm = tk.Frame(main_frm, width= 600, height=500, bg="lightgray")
     top_frm.grid(row=0, column=0, stick="nsew" )
 

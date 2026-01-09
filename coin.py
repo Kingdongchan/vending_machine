@@ -1,6 +1,8 @@
 import tkinter as tk
 import cls.button as bt
 
+# 동전 넣는 것을 버튼 누르는 것을 대처하겠음
+# 동전을 넣으면 결제칸에 돈이 증가해야됨
 
 def coin_bnt (insert_button_frm):
 
@@ -15,50 +17,5 @@ def coin_bnt (insert_button_frm):
         bnt = bt.button(insert_button_frm, coin_bnt, 4, 1, 0, i)
         bnt.number_btn_maker()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#     card_bnt = bt.button(insert_button_frm, "카드", 5, 1, 0, 5)
-# def insert_coin(insert_button_frm):
-#     #100원 코인
-#     one_bnt = bt.button(insert_button_frm, "100", 5, 1, 0, 0)
-#     one_bnt.number_btn_maker()
-
-#     #500 코인
-#     two_bnt = bt.button(insert_button_frm, "500", 5, 1, 0, 1)
-#     two_bnt.number_btn_maker()
-
-#     #1000원 지폐
-#     three_bnt = bt.button(insert_button_frm, "1000", 5, 1, 0, 2)
-#     three_bnt.number_btn_maker()
-
-#     #5000원 지페
-#     four_bnt = bt.button(insert_button_frm, "5000", 5, 1, 0, 3)
-#     four_bnt.number_btn_maker()
-
-#     #10000원 지페
-#     five_bnt = bt.button(insert_button_frm, "10000", 5, 1, 0, 4)
-#     five_bnt.number_btn_maker()
-
-#     #카드
+        # 버튼을 누르면 입력 더해지는 창에 돈이 더해져야함.
+        

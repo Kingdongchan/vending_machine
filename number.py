@@ -1,6 +1,16 @@
 import tkinter as tk
 import cls.button as bt
 
+# 버튼 1,2,3,4,5,6,7,8,9, del, 결정, 취소 버튼이 있음
+# 입력창은 건들 수 없고 버튼을 누르면 입력창에 번호가 나와야됨
+# 결정을 누르면 입력창에 있는 번호와 맞는 상품이 나와야됨
+    # 만약에 가격이 적으면 "상품을 구매할 수 없습니다"  입력창에 출력
+    # 만약에 가격이 알맞다면 "감사합니다." 입력창에 출력
+# del를 누르면 -> 입력창 초기화
+#취소를 누르면 잔돈 반환
+    # 잔돈이 부족하다면 -> "잔돈이 부족합니다 전화번호에 연락 부탁드립니다."
+    # 잔돈이 적절하다면 -> "잔돈이 반환되었습니다." 출력
+
 def number_bnt(number_frm):
 
     button = [
@@ -36,6 +46,16 @@ def number_bnt(number_frm):
         #결정이면 음료 배출(나중에 만들 예정)
         if num == "Del":
             ent.delete(0, tk.END)
+        elif num == "결정":
+            ent.delete(0, tk.END)
+            #감사합니다. 배출구를 확인하세요.
+            
+            answer = "감사합니다."
+            ent.insert(0, answer)
+        
+        elif num == "취소":
+            ent.delete(0, tk.END)
+
         else:
             ent.insert(tk.END, num)
 
