@@ -10,12 +10,9 @@ root.geometry("550x600")
 #하단 - 배출구 -> 오른쪽 하단에 있어야함
 
 #상품을 진열할 곳
-top_frm = tk.Frame(root, width= 550, height= 500, bg="lightgray")
+top_frm = tk.Frame(root, width= 550, height= 600, bg="lightgray")
 top_frm.pack(side="top", fill="both", expand=True)
 
-#배출구를 만들 곳
-bt_frm = tk.Frame(root, width= 550, height=100, bg="red")
-bt_frm.pack(side="top", fill="both", expand=True)
 
 #상단 상품을 진열하는 곳 만들기
 menu = [
@@ -53,6 +50,12 @@ for i in range(len(menu)):
     menu_frm = frm.frame(top_frm, 30, 30, r, c, True, "gray", prd)
     menu_frm.frm_maekr()
 
-    
+#배출구를 만들 곳
+bt_frm = tk.Frame(root, width= 550, height=100, bg="red")
+bt_frm.pack(side="top", fill="both", expand=True)
+
+#배출구
+out_prd = frm.frame(bt_frm, 100, 100 , 0, 0, True, "white", None)
+out_prd.frm_bt_maker()
 
 root.mainloop()
