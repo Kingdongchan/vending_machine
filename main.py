@@ -1,5 +1,7 @@
 import tkinter as tk
 
+import number as nmb
+
 root = tk.Tk()
 root.title("자판기")
 root.geometry("800x600")
@@ -24,9 +26,12 @@ payment_frm.pack(side="top", fill="x", expand=True)
 number_frm = tk.Frame(side_frm, width=250, height =250, bg = "white")
 number_frm.pack(side= "top", fill="x", expand=True)
 
+# 번호칸 number.py 불러오기
+nmb.number_bnt(number_frm)
+
 #현금칸
 insert_button_frm = tk.Frame(side_frm, width=250, height= 30, bg = "white")
 insert_button_frm.pack(sid= "top", fill="x", expand=True)
 
-
+ 
 root.mainloop()
