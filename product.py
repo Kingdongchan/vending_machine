@@ -6,6 +6,8 @@ import cls.frame as frm
 # 상품보다 현금이 많이 들어오면 불을 들어오게 끔
 # 배출구에 구매한 상품이 배출
 
+#재고
+
 def main_frame_product (main_frm):
 
     #프레임이 2개로 나눠져야함

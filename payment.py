@@ -12,7 +12,7 @@ def payment (payment_frm):
 
     #공간 생성
     buy_insert = tk.Entry(payment_frm, width=20, state="normal")
-    buy_insert.pack(side="top")
+    buy_insert.pack(side="left")
     #"돈을 넣어주십시오." 넣기
     answer = "돈을 넣어주십시오."
     buy_insert.insert(0, answer)

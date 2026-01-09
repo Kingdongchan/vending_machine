@@ -2,7 +2,8 @@ import tkinter as tk
 
 import number as nmb
 import product as prd
-import coin 
+import coin
+import payment  
 root = tk.Tk()
 root.title("자판기")
 root.geometry("800x600")
@@ -24,9 +25,13 @@ side_frm.pack(side="left", fill="y", expand= True)
 #입력칸
 insert_frm = tk.Frame(side_frm, width=250, height=250, bg="white")
 insert_frm.pack(side="top", fill="x", expand=True)
+
 #결제칸
 payment_frm = tk.Frame(side_frm, width=250, height= 0, bg="white")
 payment_frm.pack(side="top", fill="x", expand=True)
+
+payment.payment(payment_frm)
+
 #번호칸
 number_frm = tk.Frame(side_frm, width=250, height =250, bg = "white")
 number_frm.pack(side= "top", fill="x", expand=True)
