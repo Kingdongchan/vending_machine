@@ -54,7 +54,7 @@ def main_frame_product (main_frm):
         menu_frm.frm_maekr()
 
     #배출구를 만들 곳
-    bt_frm = tk.Frame(main_frm, bg="red")
+    bt_frm = tk.Frame(main_frm, bg="black")
     bt_frm.grid(row=1, column=0, sticky="nsew")
 
     bt_frm.grid_columnconfigure(0, weight=1)
