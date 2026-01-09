@@ -2,7 +2,7 @@ import tkinter as tk
 
 import number as nmb
 import product as prd
-
+import coin 
 root = tk.Tk()
 root.title("자판기")
 root.geometry("800x600")
@@ -10,7 +10,8 @@ root.geometry("800x600")
 #프레임 형성(메인프레임, 사이드 프레임)
 #메인프레임 -> 사이드프레임보다 커야하고 상품이 16가지가 들어가야함
 main_frm = tk.Frame(root, width=550 ,bg="lightgray")
-main_frm.pack(side="left", fill="y", expand = True)
+main_frm.pack(side="left", fill="both", expand = True)
+
 
 #메인프레임에 상품이랑 배출고 배치하기
 prd.main_frame_product(main_frm)
@@ -37,5 +38,7 @@ nmb.number_bnt(number_frm)
 insert_button_frm = tk.Frame(side_frm, width=250, height= 30, bg = "white")
 insert_button_frm.pack(sid= "top", fill="x", expand=True)
 
+#돈 버튼
+coin.coin_bnt(insert_button_frm)
  
 root.mainloop()

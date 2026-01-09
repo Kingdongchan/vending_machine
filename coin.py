@@ -2,21 +2,19 @@ import tkinter as tk
 import cls.button as bt
 
 
-root = tk.Tk()
+def coin_bnt (insert_button_frm):
 
-coin = [
-    100, 500, 1000, 5000 ,10000, "카드"
-]
+    coin = [
+        100, 500, 1000, 5000 ,10000, "카드"
+    ]
 
-#버튼 만들기(100, 500, 1000, 5000, 10000, 카드)
-for i in range(len(coin)):
-    coin_bnt = coin[i]
+    #버튼 만들기(100, 500, 1000, 5000, 10000, 카드)
+    for i in range(len(coin)):
+        coin_bnt = coin[i]
 
-    bnt = bt.button(root, coin_bnt, 5, 1, 0, i)
-    bnt.number_btn_maker()
+        bnt = bt.button(insert_button_frm, coin_bnt, 4, 1, 0, i)
+        bnt.number_btn_maker()
 
-
-root.mainloop()
 
 
 
